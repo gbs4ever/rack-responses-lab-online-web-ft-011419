@@ -4,9 +4,11 @@ def call(env)
 resp= Rack::Response.new
 
   if time < 12
-  "Good Morning!"
+ resp.write  "Good Morning!"
   else
-    "Good Afternoon!"
+resp.write     "Good Afternoon!"
+    
   end
 resp.finish
 end
+emd 
